@@ -1,0 +1,8 @@
+yum groupinstall "Development Tools" -y
+yum install hmaccalc zlib-devel binutils-devel elfutils-libelf-devel ncurses-devel bc wget -y
+wget http://linuxsoft.cern.ch/cern/centos/7/rt/CentOS-RT.repo
+cp CentOS-RT.repo /etc/yum.repos.d/CentOS-RT.repo
+wget http://linuxsoft.cern.ch/cern/slc5X/i386/RPM-GPG-KEYs/RPM-GPG-KEY-cern
+cp RPM-GPG-KEY-cern /etc/pki/rpm-gpg/RPM-GPG-KEY-cern
+yum groupinstall RT
+reboot

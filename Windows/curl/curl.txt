@@ -1,0 +1,14 @@
+projects->windows-> 빌드 환경에 맞게 실행
+
+
+Visual Studio 97 (5.0)
+Visual Studio 6.0
+Visual Studio.Net (2002) (7.0)
+Visual Studio.Net 2003 (7.1)
+Visual Studio 2005 (8.0)
+Visual Studio 2008 (9.0)
+Visual Studio 2010 (10.0)
+Visual Studio 2012 (11.0)
+Visual Studio 2013 (12.0)
+Visual Studio 2015 (14.0)
+Visual Studio 2017 (14.1)

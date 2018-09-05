@@ -1,0 +1,55 @@
+** 풀더명 특수문자 있으면 빌드 안됨 **
+////////////////////openssl-1.1.1-pre8////////////////////
+32비트
+perl Configure VC-WIN32 no-idea no-md2 no-mdc2 no-rc5 no-rc4  no-asm --prefix=openssl 빌드 경로
+set ACTIVEPERL_PPM_HOME=C:\Perl\Temp
+ppm install dmake
+namefile -> WX -> WX- 변경
+make (x02 오류나는 파일 주석 삭제)
+make install
+
+64비트
+perl Configure VC-WIN64A no-idea no-md2 no-mdc2 no-rc5 no-rc4  no-asm --prefix=openssl 빌드 경로
+set ACTIVEPERL_PPM_HOME=C:\Perl\Temp
+ppm install dmake
+make (x02 오류나는 파일 주석 삭제)
+make install
+
+
+////////////////////openssl-1.0.2o////////////////////
+32비트
+perl Configure VC-WIN32 no-idea no-md2 no-mdc2 no-rc5 no-rc4  no-asm --prefix=openssl 빌드 경로
+set ACTIVEPERL_PPM_HOME=C:\Perl\Temp
+ppm install dmake
+ms\do_ms.bat
+nmake -f ms\ntdll.mak
+nmake -f ms\ntdll.mak install
+
+64비트
+perl Configure VC-WIN64A no-idea no-md2 no-mdc2 no-rc5 no-rc4  no-asm --prefix=openssl 빌드 경로
+set ACTIVEPERL_PPM_HOME=C:\Perl\Temp
+ppm install dmake
+ms\do_win64a
+nmake -f ms\ntdll.mak
+nmake -f ms\ntdll.mak install
+
+
+
+
+vs lib 추가
+///////////////////////////
+ssleay32.lib libeay32.lib
+///////////////////////////
+
+
+Visual Studio 97 (5.0)
+Visual Studio 6.0
+Visual Studio.Net (2002) (7.0)
+Visual Studio.Net 2003 (7.1)
+Visual Studio 2005 (8.0)
+Visual Studio 2008 (9.0)
+Visual Studio 2010 (10.0)
+Visual Studio 2012 (11.0)
+Visual Studio 2013 (12.0)
+Visual Studio 2015 (14.0)
+Visual Studio 2017 (15.0)

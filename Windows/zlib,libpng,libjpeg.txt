@@ -1,0 +1,6 @@
+/* lib */
+zlib : opencv -> 각 폴더 -> 3rdparty -> lib
+libpng : opencv -> 각 폴더 -> 3rdparty -> lib
+libjpeg : opencv -> 각 폴더 -> 3rdparty -> lib
+/* include */
+opencv -> sources -> 각 폴더
